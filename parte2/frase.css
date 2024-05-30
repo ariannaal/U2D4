@@ -24,8 +24,10 @@
         font-style: normal;
     }
 
-    main {
+    #testoAlternato {
+        padding: 6vh;
         margin: 20vh;
+        border: 8px solid grey;
     }
 
     .parole {
@@ -35,7 +37,7 @@
 
     .parole i {
         position: absolute;
-        margin-left: 70px;
+        margin-left: 40px;
         color: #6A879B;
         opacity: 0;
         animation: fadeInOut 4s;
@@ -75,8 +77,5 @@
             transform: translateY(200px);
         }
     }
-
-
-
 
 }

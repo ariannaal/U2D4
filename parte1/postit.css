@@ -12,14 +12,41 @@
     .row {
         display: flex;
         justify-content: space-around;
+        text-align: center;
     }
 
     .postit {
         height: 550px;
         width: 700px;
-        background-color: aliceblue;
         margin-block: 10vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+        padding-top: 7vh;
+    }
+
+    .postit,
+    .text {
+        font-family: "Indie Flower", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .postit {
+        font-weight: 900;
+        font-size: 90px;
+    }
+
+    .text {
+        font-size: 50px;
+        padding-top: 5vh;
+    }
+
+
+
+    .postit:hover {
+        animation-name: selectPostit;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        cursor: pointer;
     }
 
     .row:first-child .postit:nth-of-type(1),
@@ -61,6 +88,15 @@
 
     .purple {
         background-image: linear-gradient(to bottom, #C9C9F3, #787a8f 99%);
+    }
+
+
+
+    @keyframes selectPostit {
+        100% {
+            transform: rotate(0deg);
+            transform: scale(1.2);
+        }
     }
 
 }
